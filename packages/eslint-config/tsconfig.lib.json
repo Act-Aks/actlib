@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "types": ["node"],
+        "noPropertyAccessFromIndexSignature": true,
+        "outDir": "../../dist/out-tsc",
+        "declaration": true,
+        "emitDeclarationOnly": false
+    },
+    "extends": "../../tsconfig.base.json",
+    "include": ["src/**/*.ts"],
+    "references": []
+}
