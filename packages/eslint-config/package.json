@@ -38,10 +38,7 @@
                 "options": {
                     "packageRoot": "dist/packages/{projectName}",
                     "access": "public"
-                },
-                "dependsOn": [
-                    "build"
-                ]
+                }
             }
         }
     },
@@ -54,5 +51,9 @@
         "eslint-plugin-import": "^2.31.0",
         "eslint-plugin-promise": "^7.2.1",
         "tslib": "^2.8.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Act-Aks/actlib.git"
     }
 }
