@@ -1,0 +1,66 @@
+name: Release
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+
+permissions:
+    id-token: write
+    contents: write
+    packages: read
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  cache: yarn
+                  node-version-file: .nvmrc
+                  registry-url: https://npm.pkg.github.com
+                  scope: '@act-aks'
+
+            - name: Install dependencies
+              run: yarn install --immutable
+
+            - uses: ExpediaGroup/package-json-validator@v1.6.0
+              with:
+                  rules: |
+                      ranges
+                      tags
+                  dependency-types: |
+                      dependencies
+                      devDependencies
+                  ignore-packages: |
+                      @jscutlery/semv
+                  allowed-ranges: ^
+
+            - name: Sets the base and head SHAs for the nx affected commands in CI
+              uses: nrwl/nx-set-shas@v4
+
+            - name: Lint
+              run: yarn nx affected -t lint
+
+            - name: Build
+              run: yarn nx affected -t build
+
+            - name: Print Environment Info
+              run: yarn nx report
+
+            - name: Run nx release
+              env:
+                  GH_TOKEN: ${{ secrets.FULL_TOKEN }}
+                  NODE_AUTH_TOKEN: ${{ secrets.FULL_TOKEN }}
+                  NPM_CONFIG_PROVENANCE: true
+              run: |
+                  git config --global user.email ${{ secrets.USER_EMAIL }}
+                  git config --global user.name ${{ secrets.USER_NAME }}
+                  yarn nx release publish

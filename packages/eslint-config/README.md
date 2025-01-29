@@ -1,4 +1,4 @@
-# @actlib/eslint-config
+# @act-aks/eslint-config
 
 A shared ESLint configuration package that provides a comprehensive set of rules for TypeScript projects. This configuration is designed to enforce consistent code style and catch potential errors early in development.
 
@@ -43,7 +43,7 @@ A shared ESLint configuration package that provides a comprehensive set of rules
 ## Installation
 
 ```bash
-yarn add -D @actlib/eslint-config
+yarn add -D @act-aks/eslint-config
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ yarn add -D @actlib/eslint-config
 Create an `eslint.config.js` file in your project root:
 
 ```javascript
-import eslintConfig from '@actlib/eslint-config'
+import eslintConfig from '@act-aks/eslint-config'
 
 export default [...eslintConfig]
 ```

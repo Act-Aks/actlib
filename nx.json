@@ -28,6 +28,7 @@
     "release": {
         "projects": ["packages/*"],
         "projectsRelationship": "independent",
+        "releaseTagPattern": "release/{projectName}/{version}",
         "git": {
             "commitMessage": "chore(release): updated version {version} [no ci]"
         },
