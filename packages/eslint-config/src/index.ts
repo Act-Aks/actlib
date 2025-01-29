@@ -24,7 +24,6 @@ const config: Linter.Config = {
     plugins: {
         'check-file': checkFile,
     },
-
     rules: {
         '@typescript-eslint/array-type': ['error', { default: 'array' }],
         '@typescript-eslint/ban-ts-comment': 'error',

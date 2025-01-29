@@ -4,44 +4,6 @@
     "type": "commonjs",
     "main": "./src/index.js",
     "types": "./src/index.d.ts",
-    "nx": {
-        "sourceRoot": "packages/eslint-config/src",
-        "projectType": "library",
-        "name": "eslint-config",
-        "release": {
-            "version": {
-                "generatorOptions": {
-                    "packageRoot": "dist/packages/{projectName}",
-                    "currentVersionResolver": "git-tag"
-                }
-            }
-        },
-        "targets": {
-            "prettier": {
-                "command": "prettier --write 'packages/{projectName}/**/*.{js,ts,json,md,yml,yaml}'"
-            },
-            "build": {
-                "executor": "@nx/js:tsc",
-                "outputs": [
-                    "{options.outputPath}"
-                ],
-                "options": {
-                    "outputPath": "dist/packages/eslint-config",
-                    "main": "packages/eslint-config/src/index.ts",
-                    "tsConfig": "packages/eslint-config/tsconfig.lib.json",
-                    "assets": [
-                        "packages/eslint-config/*.md"
-                    ]
-                }
-            },
-            "nx-release-publish": {
-                "options": {
-                    "packageRoot": "dist/packages/{projectName}",
-                    "access": "public"
-                }
-            }
-        }
-    },
     "dependencies": {
         "@eslint/js": "^9.8.0",
         "@typescript-eslint/eslint-plugin": "8.21.0",

@@ -1,0 +1,34 @@
+{
+    "name": "eslint-config",
+    "projectType": "library",
+    "release": {
+        "version": {
+            "generatorOptions": {
+                "packageRoot": "dist/packages/{projectName}",
+                "currentVersionResolver": "git-tag"
+            }
+        }
+    },
+    "sourceRoot": "packages/eslint-config/src",
+    "targets": {
+        "prettier": {
+            "command": "prettier --write 'packages/{projectName}/**/*.{js,ts,json,md,yml,yaml}'"
+        },
+        "build": {
+            "executor": "@nx/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "outputPath": "dist/packages/eslint-config",
+                "main": "packages/eslint-config/src/index.ts",
+                "tsConfig": "packages/eslint-config/tsconfig.lib.json",
+                "assets": ["packages/eslint-config/*.md"]
+            }
+        },
+        "nx-release-publish": {
+            "options": {
+                "packageRoot": "dist/packages/{projectName}",
+                "access": "public"
+            }
+        }
+    }
+}
