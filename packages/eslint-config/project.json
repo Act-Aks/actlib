@@ -3,17 +3,12 @@
     "projectType": "library",
     "release": {
         "version": {
-            "generatorOptions": {
-                "packageRoot": "dist/packages/{projectName}",
-                "currentVersionResolver": "git-tag"
-            }
+            "generatorOptions": { "packageRoot": "dist/packages/{projectName}", "currentVersionResolver": "git-tag" }
         }
     },
     "sourceRoot": "packages/eslint-config/src",
     "targets": {
-        "prettier": {
-            "command": "prettier --write 'packages/{projectName}/**/*.{js,ts,json,md,yml,yaml}'"
-        },
+        "prettier": { "command": "prettier --write 'packages/{projectName}/**/*.{js,ts,json,md,yml,yaml}'" },
         "build": {
             "executor": "@nx/js:tsc",
             "outputs": ["{options.outputPath}"],
@@ -24,11 +19,6 @@
                 "assets": ["packages/eslint-config/*.md"]
             }
         },
-        "nx-release-publish": {
-            "options": {
-                "packageRoot": "dist/packages/{projectName}",
-                "access": "public"
-            }
-        }
+        "nx-release-publish": { "options": { "packageRoot": "dist/packages/{projectName}", "access": "public" } }
     }
 }

@@ -11,19 +11,9 @@ import promisePlugin from 'eslint-plugin-promise'
 import { sharedNamingConvention } from './shared.js'
 
 const config: Linter.Config = {
-    languageOptions: {
-        parser: tsParser,
-        parserOptions: {
-            ecmaVersion: 'latest',
-            sourceType: 'module',
-        },
-    },
-    linterOptions: {
-        reportUnusedDisableDirectives: true,
-    },
-    plugins: {
-        'check-file': checkFile,
-    },
+    languageOptions: { parser: tsParser, parserOptions: { ecmaVersion: 'latest', sourceType: 'module' } },
+    linterOptions: { reportUnusedDisableDirectives: true },
+    plugins: { 'check-file': checkFile },
     rules: {
         '@typescript-eslint/array-type': ['error', { default: 'array' }],
         '@typescript-eslint/ban-ts-comment': 'error',
@@ -32,12 +22,7 @@ const config: Linter.Config = {
         '@typescript-eslint/method-signature-style': ['error', 'property'],
         '@typescript-eslint/naming-convention': [
             ...sharedNamingConvention,
-            {
-                format: ['camelCase'],
-                leadingUnderscore: 'allow',
-                selector: 'default',
-                trailingUnderscore: 'allow',
-            },
+            { format: ['camelCase'], leadingUnderscore: 'allow', selector: 'default', trailingUnderscore: 'allow' },
             {
                 format: ['camelCase', 'UPPER_CASE'],
                 leadingUnderscore: 'allow',
@@ -116,14 +101,8 @@ const config: Linter.Config = {
         yoda: 'error',
     },
     settings: {
-        'import/parsers': {
-            '@typescript-eslint/parser': ['.ts', '.tsx'],
-        },
-        'import/resolver': {
-            typescript: {
-                alwaysTryTypes: true,
-            },
-        },
+        'import/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx'] },
+        'import/resolver': { typescript: { alwaysTryTypes: true } },
     },
 } satisfies Linter.Config
 
