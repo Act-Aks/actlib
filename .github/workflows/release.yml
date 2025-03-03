@@ -31,7 +31,7 @@ jobs:
             - name: Install dependencies
               run: yarn install --immutable
 
-            - uses: ExpediaGroup/package-json-validator@v1.6.0
+            - uses: ExpediaGroup/package-json-validator@v1.10.0
               with:
                   rules: |
                       ranges
