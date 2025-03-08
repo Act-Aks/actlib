@@ -8,9 +8,9 @@ A monorepo containing various JavaScript/TypeScript packages.
 
 <!-- BEGIN-PACKAGES -->
 
-| Package                                           | Version                                                                                                                            | Description                                            |
-| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| [@actlib/eslint-config](./packages/eslint-config) | ![npm](https://img.shields.io/github/package-json/v/act-aks/actlib?filename=packages%2Feslint-config%2Fpackage.json&color=success) | Basic eslint config defined to be used in any projects |
+| Package                                            | Version                                                                                                                           | Description                                            |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| [@act-aks/eslint-config](./packages/eslint-config) | [![npm](https://img.shields.io/npm/v/@act-aks/eslint-config?color=success)](https://www.npmjs.com/package/@act-aks/eslint-config) | Basic eslint config defined to be used in any projects |
 
 <!-- END-PACKAGES -->
 
