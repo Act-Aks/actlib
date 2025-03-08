@@ -13,7 +13,7 @@
             "default": "./dist/index.js"
         }
     },
-    "description": "A shared ESLint configuration for any js projects",
+    "description": "A shared ESLint configuration for any js/ts projects",
     "dependencies": {
         "@eslint/js": "^9.21.0",
         "@typescript-eslint/eslint-plugin": "8.26.0",
