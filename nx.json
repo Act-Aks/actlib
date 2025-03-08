@@ -1,0 +1,82 @@
+{
+    "$schema": "./node_modules/nx/schemas/nx-schema.json",
+    "defaultBase": "main",
+    "namedInputs": {
+        "default": ["{projectRoot}/**/*", "sharedGlobals"],
+        "production": ["default", "!{projectRoot}/.eslintrc.json", "!{projectRoot}/eslint.config.mjs"],
+        "sharedGlobals": []
+    },
+    "plugins": [
+        {
+            "plugin": "@nx/js/typescript",
+            "options": {
+                "typecheck": {
+                    "targetName": "typecheck"
+                },
+                "build": {
+                    "targetName": "build",
+                    "configName": "tsconfig.lib.json",
+                    "buildDepsName": "build-deps",
+                    "watchDepsName": "watch-deps"
+                }
+            }
+        },
+        {
+            "plugin": "@nx/js/typescript",
+            "include": ["packages/eslint-config/*"],
+            "options": {
+                "typecheck": {
+                    "targetName": "typecheck"
+                }
+            },
+            "exclude": ["packages/eslint-config/*"]
+        },
+        {
+            "plugin": "@nx/eslint/plugin",
+            "options": {
+                "targetName": "lint"
+            }
+        }
+    ],
+    "release": {
+        "projectsRelationship": "independent",
+        "projects": ["packages/*"],
+        "changelog": {
+            "workspaceChangelog": true,
+            "projectChangelogs": {
+                "createRelease": "github"
+            }
+        },
+        "version": {
+            "generatorOptions": {
+                "specifierSource": "conventional-commits",
+                "packageRoot": "build/{projectRoot}",
+                "currentVersionResolver": "git-tag",
+                "skipLockFileUpdate": true
+            },
+            "git": {
+                "commitMessageFormat": "chore({projectName}): release version {version} [skip ci]"
+            }
+        },
+        "conventionalCommits": {
+            "types": {
+                "docs": true,
+                "style": {
+                    "semverBump": "minor"
+                }
+            }
+        }
+    },
+    "targetDefaults": {
+        "build": {
+            "dependsOn": ["^build"],
+            "cache": true
+        },
+        "typecheck": {
+            "cache": true
+        },
+        "nx-release-publish": {
+            "options": { "packageRoot": "build/{projectRoot}" }
+        }
+    }
+}

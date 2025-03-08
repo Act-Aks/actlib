@@ -1,0 +1,115 @@
+import js from '@eslint/js'
+import tsPlugin from '@typescript-eslint/eslint-plugin'
+import tsParser from '@typescript-eslint/parser'
+import type { Linter } from 'eslint'
+import checkFile from 'eslint-plugin-check-file'
+import importPlugin from 'eslint-plugin-import'
+import promisePlugin from 'eslint-plugin-promise'
+
+import { sharedNamingConvention } from './shared'
+
+const config: Linter.Config = {
+    languageOptions: { parser: tsParser, parserOptions: { ecmaVersion: 'latest', sourceType: 'module' } },
+    linterOptions: { reportUnusedDisableDirectives: true },
+    plugins: { 'check-file': checkFile },
+    rules: {
+        '@typescript-eslint/array-type': ['error', { default: 'array' }],
+        '@typescript-eslint/ban-ts-comment': 'error',
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/method-signature-style': ['error', 'property'],
+        '@typescript-eslint/naming-convention': [
+            ...sharedNamingConvention,
+            { format: ['camelCase'], leadingUnderscore: 'allow', selector: 'default', trailingUnderscore: 'allow' },
+            {
+                format: ['camelCase', 'UPPER_CASE'],
+                leadingUnderscore: 'allow',
+                selector: 'variable',
+                trailingUnderscore: 'forbid',
+            },
+            {
+                format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+                leadingUnderscore: 'allow',
+                modifiers: ['exported'],
+                selector: 'variable',
+                trailingUnderscore: 'forbid',
+            },
+        ],
+        '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
+        '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
+        '@typescript-eslint/no-non-null-assertion': 'error',
+        '@typescript-eslint/no-require-imports': 'error',
+        '@typescript-eslint/no-shadow': 'error',
+        '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
+        '@typescript-eslint/no-unnecessary-condition': 'error',
+        '@typescript-eslint/no-unsafe-argument': 'off',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+        '@typescript-eslint/no-unsafe-return': 'off',
+        '@typescript-eslint/no-unused-expressions': 'error',
+        '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+        '@typescript-eslint/no-use-before-define': ['error', { functions: false, variables: false }],
+        '@typescript-eslint/no-useless-constructor': 'error',
+        '@typescript-eslint/prefer-as-const': 'error',
+        '@typescript-eslint/prefer-optional-chain': 'error',
+        '@typescript-eslint/prefer-readonly': 'error',
+        '@typescript-eslint/prefer-string-starts-ends-with': 'error',
+        '@typescript-eslint/restrict-template-expressions': ['error', { allowBoolean: true, allowNumber: true }],
+        '@typescript-eslint/switch-exhaustiveness-check': ['error', { considerDefaultExhaustiveForUnions: true }],
+        '@typescript-eslint/unbound-method': 'off',
+        'check-file/filename-blocklist': ['error', { '**/*.test.ts': '*.spec.ts', '**/*.test.tsx': '*.spec.tsx' }],
+        curly: 'error',
+        eqeqeq: 'error',
+        'import/no-unresolved': 'off',
+        'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+        'no-alert': 'error',
+        'no-console': 'error',
+        'no-duplicate-imports': 'error',
+        'no-else-return': 'error',
+        'no-eval': 'error',
+        'no-extend-native': 'error',
+        'no-lone-blocks': 'error',
+        'no-lonely-if': 'error',
+        'no-multi-assign': 'error',
+        'no-nested-ternary': 'error',
+        'no-new-func': 'error',
+        'no-return-assign': 'error',
+        'no-return-await': 'error',
+        'no-self-compare': 'error',
+        'no-sequences': 'error',
+        'no-shadow': 'off',
+        'no-template-curly-in-string': 'error',
+        'no-throw-literal': 'error',
+        'no-unused-expressions': 'off',
+        'no-unused-vars': 'off',
+        'no-use-before-define': 'off',
+        'no-useless-call': 'error',
+        'no-useless-computed-key': 'error',
+        'no-useless-concat': 'error',
+        'no-useless-constructor': 'off',
+        'no-useless-rename': 'error',
+        'no-useless-return': 'error',
+        'object-shorthand': 'error',
+        'prefer-arrow-callback': 'error',
+        'prefer-template': 'error',
+        'promise/prefer-await-to-callbacks': 'error',
+        'promise/prefer-await-to-then': 'error',
+        quotes: ['error', 'single', { allowTemplateLiterals: false, avoidEscape: true }],
+        yoda: 'error',
+    },
+    settings: {
+        'import/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx'] },
+        'import/resolver': { typescript: { alwaysTryTypes: true } },
+    },
+} satisfies Linter.Config
+
+const defaultConfig: Linter.Config[] = [
+    js.configs.recommended,
+    tsPlugin.configs['recommended'],
+    importPlugin.flatConfigs.recommended,
+    promisePlugin.configs['flat/recommended'],
+    config,
+]
+
+export default defaultConfig
