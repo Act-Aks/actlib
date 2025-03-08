@@ -5,9 +5,9 @@ __metadata:
   version: 8
   cacheKey: 10
 
-"@actlib/eslint-config@workspace:packages/eslint-config":
+"@act-aks/eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
-  resolution: "@actlib/eslint-config@workspace:packages/eslint-config"
+  resolution: "@act-aks/eslint-config@workspace:packages/eslint-config"
   dependencies:
     "@eslint/js": "npm:^9.21.0"
     "@typescript-eslint/eslint-plugin": "npm:8.26.0"
@@ -2507,16 +2507,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
-  version: 22.13.9
-  resolution: "@types/node@npm:22.13.9"
-  dependencies:
-    undici-types: "npm:~6.20.0"
-  checksum: 10/23560df3ee99c907179c688754486b969a72144f2e2bdefe974d320dddc5ca8f93365842966ecbd5c5bba34e919fc1a5a6627712beb8e7f71d71347dcf414a35
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:22.13.10":
+"@types/node@npm:*, @types/node@npm:22.13.10":
   version: 22.13.10
   resolution: "@types/node@npm:22.13.10"
   dependencies:
