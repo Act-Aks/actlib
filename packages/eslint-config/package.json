@@ -41,7 +41,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Act-Aks/actlib.git",
+        "url": "git+https://github.com/Act-Aks/actlib.git",
         "directory": "packages/eslint-config"
     }
 }

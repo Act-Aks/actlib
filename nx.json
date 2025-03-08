@@ -75,7 +75,7 @@
             "cache": true
         },
         "nx-release-publish": {
-            "options": { "packageRoot": "build/{projectRoot}" }
+            "options": { "packageRoot": "build/{projectRoot}", "public": true }
         }
     }
 }
