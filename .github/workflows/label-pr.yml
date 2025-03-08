@@ -9,7 +9,7 @@ jobs:
             contents: read
             pull-requests: write
         steps:
-            - id: label-the-pr
+            - id: label-pr
               uses: actions/labeler@v5
               with:
                   repo-token: ${{ secrets.GITHUB_TOKEN }}
