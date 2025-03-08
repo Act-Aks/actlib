@@ -55,7 +55,7 @@
                 "skipLockFileUpdate": true
             },
             "git": {
-                "commitMessageFormat": "chore({projectName}): release version {version} [skip ci]"
+                "commitMessage": "chore({projectName}): release version {version} [skip ci]"
             }
         },
         "conventionalCommits": {
