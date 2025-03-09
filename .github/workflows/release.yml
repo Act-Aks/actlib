@@ -4,8 +4,14 @@ on:
     workflow_dispatch:
 
 jobs:
+    code-quality:
+        uses: .github/workflows/code-quality.yml
+        with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+
     release:
-        if: github.repository == 'Act-Aks/actlib'
+        if: ${{ !failure() && !cancelled() && github.ref == 'refs/heads/main' && github.repository == 'Act-Aks/actlib'  }}
+        needs: [code-quality]
         runs-on: ubuntu-latest
         permissions:
             contents: write
@@ -22,27 +28,13 @@ jobs:
                   cache: 'yarn'
                   node-version-file: .nvmrc
                   registry-url: https://registry.npmjs.org/
+                  always-auth: true
 
             - name: Install dependencies
               run: yarn install --immutable
 
-            - uses: ExpediaGroup/package-json-validator@v1.10.0
-              with:
-                  rules: |
-                      ranges
-                      tags
-                  dependency-types: |
-                      dependencies
-                      devDependencies
-                  ignore-packages: |
-                      @jscutlery/semv
-                  allowed-ranges: ^
-
             - name: Sets the base and head SHAs for the nx affected commands in CI
               uses: nrwl/nx-set-shas@v4
-
-            - name: Lint
-              run: yarn nx affected -t lint
 
             - name: Print Environment Info
               run: yarn nx report
