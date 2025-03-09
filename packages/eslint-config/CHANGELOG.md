@@ -1,3 +1,13 @@
+## 0.1.2 (2025-03-09)
+
+### 🩹 Fixes
+
+- latest dist-tag set to older version when no changes are pushed ([e9cc9d9](https://github.com/Act-Aks/actlib/commit/e9cc9d9))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.1.1 (2025-03-09)
 
 ### 🩹 Fixes
