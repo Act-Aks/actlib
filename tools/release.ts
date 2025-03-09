@@ -1,5 +1,6 @@
 import * as fs from 'fs-extra'
 import { releaseChangelog, releasePublish, releaseVersion } from 'nx/release'
+import { VersionData } from 'nx/src/command-line/release/version'
 import * as path from 'path'
 
 async function copyPackagesToBuild() {
@@ -47,6 +48,29 @@ async function copyChangelogFiles() {
     }
 }
 
+function getPackageName(scopedPackageName: string): string {
+    /* Could be a scoped package name */
+    // const regex = /^@[^/]+\/(.*)$/
+    // const match = scopedPackageName.match(regex)
+    // return match[1]
+    return scopedPackageName.split('/').pop() || ''
+}
+
+async function updatePackageJsonVersionsWhenNoNewVersionsReleased(projectsVersionData: VersionData) {
+    const buildDir = path.join(process.cwd(), 'build')
+    for (const projectName in projectsVersionData) {
+        const projectVersionData = projectsVersionData[projectName]
+        const packageName = getPackageName(projectName)
+        if (projectVersionData.newVersion === null) {
+            const packageJsonPath = path.join(buildDir, 'packages', packageName, 'package.json')
+            const packageJson = await fs.readJson(packageJsonPath)
+            packageJson.version = projectVersionData.currentVersion
+            await fs.writeJson(packageJsonPath, packageJson, { spaces: 4 })
+            console.log(`Updated package.json version for ${projectName} to ${projectVersionData.currentVersion}`)
+        }
+    }
+}
+
 ;(async () => {
     await copyPackagesToBuild()
 
@@ -58,6 +82,12 @@ async function copyChangelogFiles() {
     })
 
     await copyChangelogFiles()
+
+    /* NOTE(Temp solution): This function updates the package.json versions when no new versions are released.
+     * Mainly because the "releasePublish" method updates the dist-tag of the packages and does it
+     * automatically such that older version is set as latest... This is avoid it!
+     */
+    await updatePackageJsonVersionsWhenNoNewVersionsReleased(projectsVersionData)
 
     const publishResult = await releasePublish({
         registry: 'https://registry.npmjs.org/',

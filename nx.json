@@ -42,7 +42,6 @@
         "projectsRelationship": "independent",
         "projects": ["packages/*"],
         "changelog": {
-            "workspaceChangelog": true,
             "projectChangelogs": {
                 "createRelease": "github"
             }
@@ -76,7 +75,7 @@
             "cache": true
         },
         "nx-release-publish": {
-            "options": { "packageRoot": "build/{projectRoot}", "public": true }
+            "options": { "packageRoot": "build/{projectRoot}", "access": "public" }
         }
     }
 }
