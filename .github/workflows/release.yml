@@ -9,7 +9,7 @@ jobs:
     code-quality:
         uses: ./.github/workflows/code-quality.yml
         with:
-            token: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     release:
         if: ${{ !failure() && !cancelled() && github.ref == 'refs/heads/main' && github.repository == 'Act-Aks/actlib'  }}

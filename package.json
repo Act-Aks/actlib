@@ -12,7 +12,7 @@
         "lint:fix": "eslint . --fix",
         "prepare": "husky",
         "cmt": "npx cz",
-        "cq": "yarn prettier && yarn lint",
+        "cq": "yarn prettier && yarn nx run-many -t lint",
         "release": "yarn nx run-many -t build && tsx tools/release.ts"
     },
     "devDependencies": {
