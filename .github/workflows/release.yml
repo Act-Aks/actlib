@@ -8,6 +8,8 @@ on:
 jobs:
     code-quality:
         uses: ./.github/workflows/code-quality.yml
+        permissions:
+            contents: read
 
     release:
         if: ${{ !failure() && !cancelled() && github.ref == 'refs/heads/main' && github.repository == 'Act-Aks/actlib'  }}
