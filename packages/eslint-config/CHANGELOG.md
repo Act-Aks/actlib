@@ -1,3 +1,13 @@
+## 0.1.1 (2025-03-09)
+
+### 🩹 Fixes
+
+- types ([93dea98](https://github.com/Act-Aks/actlib/commit/93dea98))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.1.0 (2025-03-09)
 
 ### 🚀 Features
