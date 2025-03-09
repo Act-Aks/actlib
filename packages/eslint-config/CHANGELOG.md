@@ -1,3 +1,19 @@
+## 0.1.0 (2025-03-09)
+
+### 🚀 Features
+
+- added code quality workflow and modified release workflow ([56a5a4f](https://github.com/Act-Aks/actlib/commit/56a5a4f))
+
+### 🩹 Fixes
+
+- release ci ([8835f13](https://github.com/Act-Aks/actlib/commit/8835f13))
+- the package script ([7e2ead3](https://github.com/Act-Aks/actlib/commit/7e2ead3))
+- workflows ([ab77dd0](https://github.com/Act-Aks/actlib/commit/ab77dd0))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.0.4 (2025-03-08)
 
 ### 🩹 Fixes
