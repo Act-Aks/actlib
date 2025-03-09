@@ -8,7 +8,7 @@
         "upgrade-self": "yarn set version latest && yarn",
         "update-nx": "nx migrate latest && nx migrate --run-migrations --if-exists",
         "prettier": "prettier --write .",
-        "lint:": "yarn nx affected -t lint",
+        "lint:": "yarn nx run-many -t lint",
         "lint:fix": "eslint . --fix",
         "prepare": "husky",
         "cmt": "npx cz",
