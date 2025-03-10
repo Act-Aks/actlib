@@ -2,7 +2,7 @@
 
 A highly customizable and performant bottom sheet component for React Native applications.
 
-## Glimpse [Plese bare with the ugly demo 😂]
+## Glimpse [Please bare with the ugly demo 😂]
 
 <img src="./src/assets/demo.gif" width="200" alt="Bottom Sheet Demo"/>
 
