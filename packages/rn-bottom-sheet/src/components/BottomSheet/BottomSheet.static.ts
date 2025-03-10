@@ -8,4 +8,5 @@ export type BottomSheetRefProps = {
 }
 
 export const { height: ScreenHeight } = Dimensions.get('window')
-export const MAX_TRANSLATE_Y = -ScreenHeight + 50
+const TOP_OFFSET = 50
+export const MAX_TRANSLATE_Y = -ScreenHeight + TOP_OFFSET
