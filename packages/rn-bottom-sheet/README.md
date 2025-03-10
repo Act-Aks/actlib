@@ -44,7 +44,7 @@ const App: React.FC = () => {
         if (isActive) {
             // Perform action when active
         } else {
-            // Esle case
+            // Else case
         }
     }
 
