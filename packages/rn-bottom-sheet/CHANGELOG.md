@@ -1,3 +1,17 @@
+## 0.3.1 (2025-03-10)
+
+### 🩹 Fixes
+
+- exports from bottom sheet lib ([0bb2a78](https://github.com/Act-Aks/actlib/commit/0bb2a78))
+
+### 📖 Documentation
+
+- updates readme and format ([2cda178](https://github.com/Act-Aks/actlib/commit/2cda178))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.3.0 (2025-03-10)
 
 ### 🚀 Features
