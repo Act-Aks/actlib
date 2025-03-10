@@ -24,11 +24,14 @@
         "eslint-plugin-promise": "^7.2.1"
     },
     "files": [
-        "dist/**"
+        "dist",
+        "!*.tsbuildinfo"
     ],
     "scripts": {
         "build": "tsc --build tsconfig.lib.json",
-        "typecheck": "tsc --noEmit"
+        "typecheck": "tsc --noEmit",
+        "prettier": "prettier --check --ignore-path ../../.prettierignore --ignore-unknown \"./**/*\"",
+        "circular-deps": "dpdm ./**/*.ts --circular -T --tree false --warning false --exit-code circular:1"
     },
     "keywords": [
         "eslint",

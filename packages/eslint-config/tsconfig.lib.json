@@ -9,9 +9,9 @@
         "types": ["node"],
         "allowJs": true,
         "declaration": true,
+        "allowSyntheticDefaultImports": true,
         "module": "ES2022",
-        "moduleResolution": "bundler",
-        "allowSyntheticDefaultImports": true
+        "moduleResolution": "bundler"
     },
     "extends": "../../tsconfig.base.json",
     "include": ["src/**/*.ts"],

@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "rootDir": "src",
+        "outDir": "dist",
+        "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
+        "emitDeclarationOnly": false,
+        "forceConsistentCasingInFileNames": true,
+        "types": ["node"],
+        "allowJs": true,
+        "declaration": true,
+        "module": "ES2022",
+        "moduleResolution": "bundler",
+        "allowSyntheticDefaultImports": true,
+        "jsx": "react-native"
+    },
+    "extends": "../../tsconfig.base.json",
+    "include": ["src"],
+    "references": []
+}

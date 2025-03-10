@@ -1,0 +1,45 @@
+{
+    "name": "@act-aks/rn-bottom-sheet",
+    "version": "0.0.1",
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        "./package.json": "./package.json",
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist",
+        "!*.tsbuildinfo"
+    ],
+    "keywords": [
+        "customizable-bottom-sheet",
+        "react-native",
+        "bottom-sheet",
+        "ui"
+    ],
+    "author": "Act-Aks",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Act-Aks/actlib.git",
+        "directory": "packages/rn-bottom-sheet"
+    },
+    "dependencies": {
+        "react": "^19.0.0",
+        "react-native": "^0.78.0",
+        "react-native-gesture-handler": "^2.24.0",
+        "react-native-reanimated": "^3.17.1"
+    },
+    "scripts": {
+        "build": "tsc --build tsconfig.lib.json",
+        "typecheck": "tsc --noEmit",
+        "prettier": "prettier --check --ignore-path ../../.prettierignore --ignore-unknown \"./**/*\"",
+        "circular-deps": "dpdm ./**/*.ts --circular -T --tree false --warning false --exit-code circular:1"
+    }
+}
