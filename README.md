@@ -8,10 +8,10 @@ A monorepo containing various JavaScript/TypeScript packages.
 
 <!-- BEGIN-PACKAGES -->
 
-| Package                                                | Version                                                                                                                               | Description                                                 |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| [@act-aks/eslint-config](./packages/eslint-config)     | [![npm](https://img.shields.io/npm/v/@act-aks/eslint-config?color=success)](https://www.npmjs.com/package/@act-aks/eslint-config)     | Basic eslint config defined to be used in any projects      |
-| [@act-aks/rn-bottom-sheet](./packages/rn-bottom-sheet) | [![npm](https://img.shields.io/npm/v/@act-aks/rn-bottom-sheet?color=success)](https://www.npmjs.com/package/@act-aks/rn-bottom-sheet) | A React Native bottom sheet component with gesture handling |
+| Package                                                | Version                                                                                                                               | Downloads                                                                                                                      | Description                                                 |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| [@act-aks/eslint-config](./packages/eslint-config)     | [![npm](https://img.shields.io/npm/v/@act-aks/eslint-config?color=success)](https://www.npmjs.com/package/@act-aks/eslint-config)     | [![Downloads](https://img.shields.io/npm/dw/@act-aks/eslint-config)](https://www.npmjs.com/package/@act-aks/eslint-config)     | Basic eslint config defined to be used in any projects      |
+| [@act-aks/rn-bottom-sheet](./packages/rn-bottom-sheet) | [![npm](https://img.shields.io/npm/v/@act-aks/rn-bottom-sheet?color=success)](https://www.npmjs.com/package/@act-aks/rn-bottom-sheet) | [![Downloads](https://img.shields.io/npm/dw/@act-aks/rn-bottom-sheet)](https://www.npmjs.com/package/@act-aks/rn-bottom-sheet) | A React Native bottom sheet component with gesture handling |
 
 <!-- END-PACKAGES -->
 
