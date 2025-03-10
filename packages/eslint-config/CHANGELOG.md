@@ -1,3 +1,13 @@
+## 0.1.4 (2025-03-10)
+
+### 📖 Documentation
+
+- added license to the repo ([fbc4cca](https://github.com/Act-Aks/actlib/commit/fbc4cca))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.1.3 (2025-03-10)
 
 ### 🩹 Fixes
