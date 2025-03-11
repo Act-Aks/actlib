@@ -1,3 +1,9 @@
+## 0.1.5 (2025-03-11)
+
+### 🩹 Fixes
+
+- **deps:** update typescript-eslint monorepo to v8.26.1 ([#4](https://github.com/Act-Aks/actlib/pull/4))
+
 ## 0.1.4 (2025-03-10)
 
 ### 📖 Documentation
