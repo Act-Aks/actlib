@@ -1,7 +1,10 @@
 import { PropsWithChildren } from 'react'
-import { Dimensions } from 'react-native'
+import { Dimensions, ViewStyle } from 'react-native'
 
-export type BottomSheetProps = PropsWithChildren<{ snapPoint?: number }>
+export type BottomSheetProps = PropsWithChildren<{
+    snapPoint?: number
+    style?: ViewStyle
+}>
 export type BottomSheetRefProps = {
     scrollTo: (destination: number) => void
     isActive: () => boolean

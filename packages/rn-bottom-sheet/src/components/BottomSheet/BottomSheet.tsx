@@ -12,7 +12,7 @@ import Animated, {
 import { BottomSheetProps, BottomSheetRefProps, MAX_TRANSLATE_Y } from './BottomSheet.static'
 import { styles } from './BottomSheet.style'
 
-const BottomSheet = forwardRef<BottomSheetRefProps, BottomSheetProps>(({ children, snapPoint }, ref) => {
+const BottomSheet = forwardRef<BottomSheetRefProps, BottomSheetProps>(({ children, snapPoint, style }, ref) => {
     const { height: ScreenHeight } = useWindowDimensions()
 
     const translateY = useSharedValue<number>(0)
@@ -75,7 +75,7 @@ const BottomSheet = forwardRef<BottomSheetRefProps, BottomSheetProps>(({ childre
 
     return (
         <GestureDetector gesture={gesture}>
-            <Animated.View style={[styles.bottomSheetContainer, rBottomSheetStyle]}>{children}</Animated.View>
+            <Animated.View style={[styles.bottomSheetContainer, style, rBottomSheetStyle]}>{children}</Animated.View>
         </GestureDetector>
     )
 })

@@ -64,6 +64,7 @@ const App: React.FC = () => {
 | Prop      | Type      | Required | Default | Description                            |
 | --------- | --------- | -------- | ------- | -------------------------------------- |
 | snapPoint | number    | No       | -       | Height of the bottom sheet when opened |
+| style     | ViewStyle | No       | -       | Style the container                    |
 | children  | ReactNode | No       | -       | Content of the bottom sheet            |
 
 ### BottomSheetRefProps Methods
