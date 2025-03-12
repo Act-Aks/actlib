@@ -1,3 +1,14 @@
+## 0.3.3 (2025-03-12)
+
+### 🩹 Fixes
+
+- added the style prop to bottom-sheet ([99ab730](https://github.com/Act-Aks/actlib/commit/99ab730))
+- **deps:** update typescript-eslint monorepo to v8.26.1 ([#4](https://github.com/Act-Aks/actlib/pull/4))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.3.2 (2025-03-10)
 
 ### 📖 Documentation
