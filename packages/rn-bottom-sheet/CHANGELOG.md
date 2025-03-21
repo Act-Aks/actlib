@@ -1,3 +1,18 @@
+## 0.4.0 (2025-03-21)
+
+### 🚀 Features
+
+- updates the libs ([02c7cf2](https://github.com/Act-Aks/actlib/commit/02c7cf2))
+
+### 🩹 Fixes
+
+- **deps:** update dependency react-native to v0.78.1 ([6f2df3b](https://github.com/Act-Aks/actlib/commit/6f2df3b))
+- **deps:** update typescript-eslint monorepo to v8.27.0 ([#12](https://github.com/Act-Aks/actlib/pull/12))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.3.3 (2025-03-12)
 
 ### 🩹 Fixes

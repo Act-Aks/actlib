@@ -1,3 +1,13 @@
+## 0.2.0 (2025-03-21)
+
+### 🚀 Features
+
+- updates the libs ([02c7cf2](https://github.com/Act-Aks/actlib/commit/02c7cf2))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.1.6 (2025-03-20)
 
 ### 🩹 Fixes
