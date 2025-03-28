@@ -60,5 +60,5 @@
         "node": ">=22",
         "yarn": ">=4.7.0"
     },
-    "packageManager": "yarn@4.7.0"
+    "packageManager": "yarn@4.8.0"
 }
