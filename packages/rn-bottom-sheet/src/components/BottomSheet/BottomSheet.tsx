@@ -9,7 +9,7 @@ import Animated, {
     withSpring,
 } from 'react-native-reanimated'
 
-import { BottomSheetProps, BottomSheetRefProps, MAX_TRANSLATE_Y } from './BottomSheet.static'
+import { BottomSheetProps, BottomSheetRefProps, MAX_TRANSLATE_Y, PixelContext } from './BottomSheet.static'
 import { styles } from './BottomSheet.style'
 
 const BottomSheet = forwardRef<BottomSheetRefProps, BottomSheetProps>(({ children, snapPoint, style }, ref) => {
@@ -17,7 +17,7 @@ const BottomSheet = forwardRef<BottomSheetRefProps, BottomSheetProps>(({ childre
 
     const translateY = useSharedValue<number>(0)
     const active = useSharedValue<boolean>(false)
-    const context = useSharedValue<{ y: number }>({ y: 0 })
+    const context = useSharedValue<PixelContext>({ y: 0 })
 
     const scrollTo = useCallback((destination: number) => {
         'worklet'

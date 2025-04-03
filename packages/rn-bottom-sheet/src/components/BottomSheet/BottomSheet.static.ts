@@ -9,6 +9,7 @@ export type BottomSheetRefProps = {
     scrollTo: (destination: number) => void
     isActive: () => boolean
 }
+export type PixelContext = { y: number }
 
 export const { height: ScreenHeight } = Dimensions.get('window')
 const TOP_OFFSET = 50
