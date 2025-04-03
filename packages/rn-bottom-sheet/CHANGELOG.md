@@ -1,3 +1,17 @@
+## 0.4.1 (2025-04-03)
+
+### 🩹 Fixes
+
+- introduce PixelContext type for clarity ([2a41d8e](https://github.com/Act-Aks/actlib/commit/2a41d8e))
+- **deps:** update dependency react-native to v0.78.2 ([4bd99b6](https://github.com/Act-Aks/actlib/commit/4bd99b6))
+- **deps:** update dependency react-native-reanimated to v3.17.2 ([#25](https://github.com/Act-Aks/actlib/pull/25))
+- **deps:** update eslint monorepo to v9.23.0 ([073a94a](https://github.com/Act-Aks/actlib/commit/073a94a))
+- **deps:** update typescript-eslint monorepo to v8.28.0 ([7e6f3b1](https://github.com/Act-Aks/actlib/commit/7e6f3b1))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.4.0 (2025-03-21)
 
 ### 🚀 Features
