@@ -23,10 +23,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@act-aks/rn-bottom-sheet@workspace:packages/rn-bottom-sheet"
   dependencies:
-    react: "npm:^19.1.0"
-    react-native: "npm:^0.78.1"
     react-native-gesture-handler: "npm:^2.25.0"
-    react-native-reanimated: "npm:^3.17.1"
+    react-native-reanimated: "npm:^3.17.2"
+  peerDependencies:
+    react: ">=19"
+    react-native: ">=0.78"
   languageName: unknown
   linkType: soft
 
@@ -45,8 +46,8 @@ __metadata:
     "@swc/helpers": "npm:0.5.15"
     "@trivago/prettier-plugin-sort-imports": "npm:^5.2.2"
     "@types/fs-extra": "npm:^11.0.4"
-    "@types/node": "npm:22.13.17"
-    "@types/react": "npm:^19.0.12"
+    "@types/node": "npm:22.14.0"
+    "@types/react": "npm:^19.1.0"
     dpdm: "npm:^3.14.0"
     eslint: "npm:^9.23.0"
     eslint-config-prettier: "npm:10.1.1"
@@ -61,9 +62,9 @@ __metadata:
     prettier: "npm:^3.5.3"
     prettier-plugin-sort-json: "npm:^4.1.1"
     react: "npm:^19.1.0"
-    react-native: "npm:^0.78.1"
+    react-native: "npm:^0.78.2"
     react-native-gesture-handler: "npm:^2.25.0"
-    react-native-reanimated: "npm:^3.17.1"
+    react-native-reanimated: "npm:^3.17.2"
     tslib: "npm:^2.8.1"
     tsx: "npm:^4.19.3"
     typescript: "npm:^5.8.2"
@@ -3190,12 +3191,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.13.17":
-  version: 22.13.17
-  resolution: "@types/node@npm:22.13.17"
+"@types/node@npm:22.14.0":
+  version: 22.14.0
+  resolution: "@types/node@npm:22.14.0"
   dependencies:
-    undici-types: "npm:~6.20.0"
-  checksum: 10/b2bb532c6c7a8e8f87a49b3d2f7d5372a5c79f3b015522cfb116c974a89e438b40e03a1d46398871cba119085b5efd2e02e5acdbfc7596d6c60142f77ae9547c
+    undici-types: "npm:~6.21.0"
+  checksum: 10/d0669a8a37a18532c886ccfa51eb3fe1e46088deb4d3d27ebcd5d7d68bd6343ad1c7a3fcb85164780a57629359c33a6c917ecff748ea232bceac7692acc96537
   languageName: node
   linkType: hard
 
@@ -3206,7 +3207,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.0.12":
+"@types/react@npm:^19.1.0":
   version: 19.1.0
   resolution: "@types/react@npm:19.1.0"
   dependencies:
@@ -8494,7 +8495,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-reanimated@npm:^3.17.1":
+"react-native-reanimated@npm:^3.17.2":
   version: 3.17.2
   resolution: "react-native-reanimated@npm:3.17.2"
   dependencies:
@@ -8518,7 +8519,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native@npm:^0.78.1":
+"react-native@npm:^0.78.2":
   version: 0.78.2
   resolution: "react-native@npm:0.78.2"
   dependencies:
@@ -9759,6 +9760,13 @@ __metadata:
   version: 6.20.0
   resolution: "undici-types@npm:6.20.0"
   checksum: 10/583ac7bbf4ff69931d3985f4762cde2690bb607844c16a5e2fbb92ed312fe4fa1b365e953032d469fa28ba8b224e88a595f0b10a449332f83fa77c695e567dbe
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.21.0":
+  version: 6.21.0
+  resolution: "undici-types@npm:6.21.0"
+  checksum: 10/ec8f41aa4359d50f9b59fa61fe3efce3477cc681908c8f84354d8567bb3701fafdddf36ef6bff307024d3feb42c837cf6f670314ba37fc8145e219560e473d14
   languageName: node
   linkType: hard
 
