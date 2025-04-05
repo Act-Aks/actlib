@@ -1,3 +1,19 @@
+## 0.3.0 (2025-04-05)
+
+### 🚀 Features
+
+- restructure and enhance ESLint configuration ([5b4ec67](https://github.com/Act-Aks/actlib/commit/5b4ec67))
+
+### 🩹 Fixes
+
+- update dependencies in yarn.lock and package.json ([bbe9ff7](https://github.com/Act-Aks/actlib/commit/bbe9ff7))
+- **deps:** update dependency react-native to v0.78.2 ([4bd99b6](https://github.com/Act-Aks/actlib/commit/4bd99b6))
+- **deps:** update dependency react-native-reanimated to v3.17.2 ([#25](https://github.com/Act-Aks/actlib/pull/25))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.2.1 (2025-03-25)
 
 ### 🩹 Fixes
