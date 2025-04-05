@@ -51,9 +51,9 @@ yarn add -D @act-aks/eslint-config
 Create an `eslint.config.js` file in your project root:
 
 ```javascript
-import eslintConfig from '@act-aks/eslint-config'
+import { configs } from '@act-aks/eslint-config'
 
-export default [...eslintConfig]
+export default [...configs.react, ...configs.reactNative, ...configs.recommended]
 ```
 
 ## Rule Sets
@@ -112,4 +112,4 @@ For the best development experience, ensure your editor has ESLint integration i
 
 ## License
 
-MIT
+[MIT](https://github.com/act-aks/actlib/blob/main/LICENSE)
