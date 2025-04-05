@@ -1,3 +1,13 @@
+## 0.5.1 (2025-04-05)
+
+### 🩹 Fixes
+
+- update dependencies to latest versions ([df89aec](https://github.com/Act-Aks/actlib/commit/df89aec))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.5.0 (2025-04-05)
 
 ### 🚀 Features
