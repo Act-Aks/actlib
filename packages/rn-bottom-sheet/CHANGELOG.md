@@ -1,3 +1,13 @@
+## 1.0.1 (2025-04-06)
+
+### 🩹 Fixes
+
+- add eslint-plugin-react-hooks and update tsconfig paths ([dd4927b](https://github.com/Act-Aks/actlib/commit/dd4927b))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 # 1.0.0 (2025-04-06)
 
 ### 🚀 Features
