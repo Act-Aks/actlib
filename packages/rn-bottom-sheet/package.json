@@ -1,9 +1,10 @@
 {
     "name": "@act-aks/rn-bottom-sheet",
     "version": "0.0.1",
+    "type": "module",
     "source": "./src/index.ts",
     "main": "./dist/index.cjs.js",
-    "module": "./dist/index.ems.js",
+    "module": "./dist/index.esm.js",
     "types": "./dist/index.esm.d.ts",
     "exports": {
         "./package.json": "./package.json",
