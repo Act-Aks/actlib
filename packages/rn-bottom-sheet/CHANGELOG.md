@@ -1,3 +1,13 @@
+## 1.0.2 (2025-04-06)
+
+### 🩹 Fixes
+
+- set package type to module and correct module path ([1b9ac1c](https://github.com/Act-Aks/actlib/commit/1b9ac1c))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 1.0.1 (2025-04-06)
 
 ### 🩹 Fixes
