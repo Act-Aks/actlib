@@ -1,16 +1,21 @@
 {
     "name": "@act-aks/rn-bottom-sheet",
     "version": "0.0.1",
-    "type": "module",
-    "main": "./dist/index.js",
-    "module": "./dist/index.js",
-    "types": "./dist/index.d.ts",
+    "source": "./src/index.ts",
+    "main": "./dist/index.cjs.js",
+    "module": "./dist/index.ems.js",
+    "types": "./dist/index.esm.d.ts",
     "exports": {
         "./package.json": "./package.json",
         ".": {
-            "types": "./dist/index.d.ts",
-            "import": "./dist/index.js",
-            "default": "./dist/index.js"
+            "import": {
+                "types": "./dist/index.esm.d.ts",
+                "default": "./dist/index.esm.js"
+            },
+            "require": {
+                "types": "./dist/index.cjs.d.ts",
+                "default": "./dist/index.cjs.js"
+            }
         }
     },
     "files": [
@@ -39,7 +44,6 @@
         "react-native": ">=0.78"
     },
     "scripts": {
-        "build": "tsc --build tsconfig.lib.json",
         "typecheck": "tsc --noEmit",
         "prettier": "prettier --check --ignore-path ../../.prettierignore --ignore-unknown \"./**/*\"",
         "circular-deps": "dpdm ./**/*.ts --circular -T --tree false --warning false --exit-code circular:1"

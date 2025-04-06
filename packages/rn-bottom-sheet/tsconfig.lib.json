@@ -4,15 +4,18 @@
         "rootDir": "src",
         "outDir": "dist",
         "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
-        "emitDeclarationOnly": false,
+        "emitDeclarationOnly": true,
         "forceConsistentCasingInFileNames": true,
         "types": ["node"],
         "allowJs": true,
         "declaration": true,
-        "module": "ES2022",
+        "module": "ESNext",
         "moduleResolution": "bundler",
         "allowSyntheticDefaultImports": true,
-        "jsx": "react-native"
+        "jsx": "react-native",
+        "paths": {
+            "@/*": ["src/*"]
+        }
     },
     "extends": "../../tsconfig.base.json",
     "include": ["src"],
