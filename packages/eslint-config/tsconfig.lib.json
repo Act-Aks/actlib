@@ -11,10 +11,7 @@
         "declaration": true,
         "allowSyntheticDefaultImports": true,
         "module": "ESNext",
-        "moduleResolution": "bundler",
-        "paths": {
-            "@/*": ["src/*"]
-        }
+        "moduleResolution": "bundler"
     },
     "extends": "../../tsconfig.base.json",
     "include": ["src/**/*.ts"],

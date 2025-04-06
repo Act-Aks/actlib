@@ -12,10 +12,7 @@
         "module": "ESNext",
         "moduleResolution": "bundler",
         "allowSyntheticDefaultImports": true,
-        "jsx": "react-native",
-        "paths": {
-            "@/*": ["src/*"]
-        }
+        "jsx": "react-native"
     },
     "extends": "../../tsconfig.base.json",
     "include": ["src"],

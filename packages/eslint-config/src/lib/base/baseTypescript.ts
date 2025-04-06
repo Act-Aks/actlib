@@ -1,7 +1,7 @@
-import { LINT_GLOBALS, namingConvention } from '@/lib/constants'
 import { FlatConfig } from '@typescript-eslint/utils/ts-eslint'
 import tseslint from 'typescript-eslint'
 
+import { LINT_GLOBALS, namingConvention } from '../constants'
 import { recommendedTypeChecked } from './recommendedTypeChecked'
 
 export const baseTypescript: FlatConfig.Config = {

@@ -2,9 +2,9 @@
 
 ### 🚀 Features
 
-- ⚠️  🎸 update TypeScript version and add Rollup configuration ([927fec1](https://github.com/Act-Aks/actlib/commit/927fec1))
+- ⚠️ 🎸 update TypeScript version and add Rollup configuration ([927fec1](https://github.com/Act-Aks/actlib/commit/927fec1))
 
-### ⚠️  Breaking Changes
+### ⚠️ Breaking Changes
 
 - 🧨 Changed to rollup config to bundle and build the package
 
