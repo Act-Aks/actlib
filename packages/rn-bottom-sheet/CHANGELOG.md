@@ -1,3 +1,17 @@
+# 1.0.0 (2025-04-06)
+
+### 🚀 Features
+
+- ⚠️  🎸 update TypeScript version and add Rollup configuration ([927fec1](https://github.com/Act-Aks/actlib/commit/927fec1))
+
+### ⚠️  Breaking Changes
+
+- 🧨 Changed to rollup config to bundle and build the package
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 0.5.1 (2025-04-05)
 
 ### 🩹 Fixes
