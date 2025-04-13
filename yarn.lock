@@ -5935,14 +5935,14 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-check-file@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "eslint-plugin-check-file@npm:3.1.0"
+  version: 3.2.0
+  resolution: "eslint-plugin-check-file@npm:3.2.0"
   dependencies:
     is-glob: "npm:^4.0.3"
     micromatch: "npm:^4.0.8"
   peerDependencies:
     eslint: ">=9.0.0"
-  checksum: 10/e56d5bed4c708a8dbf6fb3d1752ce651c4db74c2af59b79c7c8fd7bdb618715896a585bc77416879bc4fd9e5374523690fb4e97c1423c974c0b7e918fce02ca9
+  checksum: 10/dd84e36de757bf22f9ae331b95de2ae2d12204d7e5eefca6bf14a4c943fc0a056272f944167c34eacf677abaaa43589ccfe0661b6f3148688156f493c7844266
   languageName: node
   linkType: hard
 
