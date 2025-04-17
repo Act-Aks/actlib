@@ -21,7 +21,7 @@ jobs:
                   fetch-depth: 0
 
             - name: Setup
-              uses: Act-Aks/cached-setup@v1.1.0
+              uses: Act-Aks/cached-setup@v1.1.1
 
             - name: Validate package.json
               uses: ExpediaGroup/package-json-validator@v1.10.0

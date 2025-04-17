@@ -25,7 +25,7 @@ jobs:
                   fetch-depth: 0
 
             - name: Setup
-              uses: Act-Aks/cached-setup@v1.1.0
+              uses: Act-Aks/cached-setup@v1.1.1
 
             - name: Sets the base and head SHAs for the nx affected commands in CI
               uses: nrwl/nx-set-shas@v4
