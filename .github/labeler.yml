@@ -1,3 +1,7 @@
 eslint-config:
     - changed-files:
           - any-glob-to-any-file: packages/eslint-config/**
+
+rn-bottom-sheet:
+    - changed-files:
+          - any-glob-to-any-file: packages/rn-bottom-sheet/**

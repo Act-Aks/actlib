@@ -24,15 +24,8 @@ jobs:
               with:
                   fetch-depth: 0
 
-            - name: Setup Node
-              uses: actions/setup-node@v4
-              with:
-                  cache: 'yarn'
-                  node-version-file: .nvmrc
-                  registry-url: https://registry.npmjs.org/
-
-            - name: Install dependencies
-              run: yarn install --immutable
+            - name: Setup
+              uses: Act-Aks/cached-setup@v1.1.0
 
             - name: Sets the base and head SHAs for the nx affected commands in CI
               uses: nrwl/nx-set-shas@v4
