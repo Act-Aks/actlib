@@ -1,3 +1,13 @@
+## 1.1.2 (2025-04-22)
+
+### 📖 Documentation
+
+- **rn-carousel:** update README with proper image tags ([b5e619a](https://github.com/Act-Aks/actlib/commit/b5e619a))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 1.1.1 (2025-04-22)
 
 ### 📖 Documentation
