@@ -1,3 +1,13 @@
+## 1.1.0 (2025-04-22)
+
+### 🚀 Features
+
+- **rn-carousel:** add carousel component with animations and autoplay ([eddf7e6](https://github.com/Act-Aks/actlib/commit/eddf7e6))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 1.0.4 (2025-04-22)
 
 ### 🩹 Fixes
