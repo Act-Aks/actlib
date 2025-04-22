@@ -1,3 +1,13 @@
+## 1.1.4 (2025-04-22)
+
+### 📖 Documentation
+
+- **rn-carousel:** simplify animation types section in README ([dfce9fd](https://github.com/Act-Aks/actlib/commit/dfce9fd))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 1.1.3 (2025-04-22)
 
 ### 📖 Documentation
