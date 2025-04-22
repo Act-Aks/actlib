@@ -1,3 +1,13 @@
+## 1.1.1 (2025-04-22)
+
+### 📖 Documentation
+
+- **rn-carousel:** add animation gifs and update README ([f4c4160](https://github.com/Act-Aks/actlib/commit/f4c4160))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 1.1.0 (2025-04-22)
 
 ### 🚀 Features
