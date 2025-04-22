@@ -1,8 +1,7 @@
 {
-    "name": "@act-aks/rn-bottom-sheet",
+    "name": "@act-aks/rn-carousel",
     "version": "0.0.1",
     "type": "module",
-    "source": "./src/index.ts",
     "main": "./dist/index.cjs.js",
     "module": "./dist/index.esm.js",
     "types": "./dist/index.esm.d.ts",
@@ -19,25 +18,7 @@
             }
         }
     },
-    "files": [
-        "dist",
-        "!*.tsbuildinfo"
-    ],
-    "keywords": [
-        "customizable-bottom-sheet",
-        "react-native",
-        "bottom-sheet",
-        "ui"
-    ],
-    "author": "Act-Aks",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Act-Aks/actlib.git",
-        "directory": "packages/rn-bottom-sheet"
-    },
     "dependencies": {
-        "react-native-gesture-handler": "2.25.0",
         "react-native-reanimated": "3.17.4"
     },
     "peerDependencies": {

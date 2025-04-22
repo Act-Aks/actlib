@@ -36,6 +36,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@act-aks/rn-carousel@workspace:packages/rn-carousel":
+  version: 0.0.0-use.local
+  resolution: "@act-aks/rn-carousel@workspace:packages/rn-carousel"
+  dependencies:
+    react-native-reanimated: "npm:3.17.4"
+  peerDependencies:
+    react: ">=19"
+    react-native: ">=0.78"
+  languageName: unknown
+  linkType: soft
+
 "@actlib/source@workspace:.":
   version: 0.0.0-use.local
   resolution: "@actlib/source@workspace:."
