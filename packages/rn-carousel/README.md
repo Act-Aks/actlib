@@ -47,25 +47,20 @@ const App = () => (
 
 ## Animation Types
 
-1. **Slide** (default): Classic horizontal/vertical slide
-   <img src="./src/assets/slide.gif" width="200" alt="Slide Animation"/>
-
-    ```tsx
-    <Carousel animationType='slide' />
-    ```
-
-2. **Fade**: Cross-fade between items with scaling
-   <img src="./src/assets/fade.gif" width="200" alt="Fade Animation"/>
-
-    ```tsx
-    <Carousel animationType='fade' />
-    ```
-
-3. **Page**: 3D flip animation
-   <img src="./src/assets/page.gif" width="200" alt="Page Animation"/>
-    ```tsx
-    <Carousel animationType='page' />
-    ```
+<div style="display: flex; overflow-x: auto; gap: 20px; padding: 20px 0;">
+    <div style="flex: 0 0 auto; width: 300px; text-align: center;">
+        <h4>Slide Animation</h4>
+        <img src="./src/assets/slide.gif" style="width: 100%; border-radius: 8px;" alt="Slide Animation"/>
+    </div>
+    <div style="flex: 0 0 auto; width: 300px; text-align: center;">
+        <h4>Fade Animation</h4>
+        <img src="./src/assets/fade.gif" style="width: 100%; border-radius: 8px;" alt="Fade Animation"/>
+    </div>
+    <div style="flex: 0 0 auto; width: 300px; text-align: center;">
+        <h4>Page Animation</h4>
+        <img src="./src/assets/page.gif" style="width: 100%; border-radius: 8px;" alt="Page Animation"/>
+    </div>
+</div>
 
 ## Configuration Guidelines
 
