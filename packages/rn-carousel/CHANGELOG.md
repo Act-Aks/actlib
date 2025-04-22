@@ -1,3 +1,13 @@
+## 1.1.3 (2025-04-22)
+
+### 📖 Documentation
+
+- **rn-carousel:** update animation types section in README ([ed208c4](https://github.com/Act-Aks/actlib/commit/ed208c4))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 1.1.2 (2025-04-22)
 
 ### 📖 Documentation
