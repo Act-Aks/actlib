@@ -48,21 +48,21 @@ const App = () => (
 ## Animation Types
 
 1. **Slide** (default): Classic horizontal/vertical slide
-   ![Slide Animation](./src/assets/slide.gif)
+   <img src="./src/assets/slide.gif" width="200" alt="Slide Animation"/>
 
     ```tsx
     <Carousel animationType='slide' />
     ```
 
 2. **Fade**: Cross-fade between items with scaling
-   ![Fade Animation](./src/assets/fade.gif)
+   <img src="./src/assets/fade.gif" width="200" alt="Fade Animation"/>
 
     ```tsx
     <Carousel animationType='fade' />
     ```
 
 3. **Page**: 3D flip animation
-   ![Page Animation](./src/assets/page.gif)
+   <img src="./src/assets/page.gif" width="200" alt="Page Animation"/>
     ```tsx
     <Carousel animationType='page' />
     ```
