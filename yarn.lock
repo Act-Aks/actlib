@@ -43,7 +43,7 @@ __metadata:
     react-native-reanimated: "npm:3.17.4"
   peerDependencies:
     react: ">=19"
-    react-native: ">=0.78"
+    react-native: ">=0.79"
   languageName: unknown
   linkType: soft
 
