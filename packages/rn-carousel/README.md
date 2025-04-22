@@ -5,15 +5,15 @@ A performant, customizable carousel component for React Native with multiple ani
 ## Installation
 
 ```bash
-npm install @actlib/rn-carousel
+npm install @act-aks/rn-carousel
 # or
-yarn add @actlib/rn-carousel
+yarn add @act-aks/rn-carousel
 ```
 
 ## Basic Usage
 
 ```tsx
-import Carousel from '@actlib/rn-carousel'
+import { Carousel } from '@act-aks/rn-carousel'
 
 const App = () => (
     <Carousel
@@ -24,7 +24,7 @@ const App = () => (
             </View>
         )}
         autoPlay
-        animationType='slide'
+        animationType={'slide'}
         itemWidth={300}
         spacing={20}
     />
@@ -61,4 +61,4 @@ const App = () => (
 
 ## License
 
-[MIT](https://github.com/act-aks/actlib/blob/main/LICENSE)
+[MIT](https://github.com/act-aks/act-aks/blob/main/LICENSE)
