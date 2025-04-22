@@ -18,6 +18,24 @@
             }
         }
     },
+    "files": [
+        "dist",
+        "!*.tsbuildinfo"
+    ],
+    "keywords": [
+        "react-native-carousel",
+        "rn-carousel",
+        "carousel",
+        "react-native",
+        "mobile-carousel"
+    ],
+    "author": "Act-Aks",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Act-Aks/actlib.git",
+        "directory": "packages/rn-carousel"
+    },
     "dependencies": {
         "react-native-reanimated": "3.17.4"
     },
