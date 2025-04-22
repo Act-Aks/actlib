@@ -1,3 +1,13 @@
+## 1.0.4 (2025-04-22)
+
+### 🩹 Fixes
+
+- update dependencies to latest versions and bump new version ([f123bc3](https://github.com/Act-Aks/actlib/commit/f123bc3))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 1.0.3 (2025-04-17)
 
 ### 🩹 Fixes
