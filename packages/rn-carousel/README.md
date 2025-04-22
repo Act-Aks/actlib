@@ -47,19 +47,10 @@ const App = () => (
 
 ## Animation Types
 
-<div style="display: flex; overflow-x: auto; gap: 20px; padding: 20px 0;">
-    <div style="flex: 0 0 auto; width: 300px; text-align: center;">
-        <h4>Slide Animation</h4>
-        <img src="./src/assets/slide.gif" style="width: 100%; border-radius: 8px;" alt="Slide Animation"/>
-    </div>
-    <div style="flex: 0 0 auto; width: 300px; text-align: center;">
-        <h4>Fade Animation</h4>
-        <img src="./src/assets/fade.gif" style="width: 100%; border-radius: 8px;" alt="Fade Animation"/>
-    </div>
-    <div style="flex: 0 0 auto; width: 300px; text-align: center;">
-        <h4>Page Animation</h4>
-        <img src="./src/assets/page.gif" style="width: 100%; border-radius: 8px;" alt="Page Animation"/>
-    </div>
+<div style="display: flex; overflow-x: auto; justify-content: center; gap: 20px;">
+  <img src="./src/assets/slide.gif" alt="Slide Animation" width="300" />
+  <img src="./src/assets/fade.gif" alt="Fade Animation" width="300" />
+  <img src="./src/assets/page.gif" alt="Page Animation" width="300" />
 </div>
 
 ## Configuration Guidelines
