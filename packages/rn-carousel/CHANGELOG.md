@@ -1,3 +1,13 @@
+## 1.1.5 (2025-04-22)
+
+### 📖 Documentation
+
+- **rn-carousel:** update package name and import syntax in README ([2e4bb62](https://github.com/Act-Aks/actlib/commit/2e4bb62))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 1.1.4 (2025-04-22)
 
 ### 📖 Documentation
