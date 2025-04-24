@@ -53,7 +53,7 @@
         "react": "19.1.0",
         "react-native": "0.79.1",
         "react-native-gesture-handler": "2.25.0",
-        "react-native-reanimated": "3.17.4",
+        "react-native-reanimated": "3.17.5",
         "rollup": "4.40.0",
         "swc-loader": "0.2.6",
         "tslib": "2.8.1",
