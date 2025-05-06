@@ -55,14 +55,15 @@
             }
         },
         "version": {
-            "generatorOptions": {
-                "specifierSource": "conventional-commits",
-                "packageRoot": "build/{projectRoot}",
-                "currentVersionResolver": "git-tag",
-                "skipLockFileUpdate": true
-            },
             "git": {
                 "commitMessage": "chore({projectName}): release version {version} [skip ci]"
+            },
+            "specifierSource": "conventional-commits",
+            "currentVersionResolver": "git-tag",
+            "preserveLocalDependencyProtocols": false,
+            "manifestRootsToUpdate": ["build/{projectRoot}"],
+            "versionActionsOptions": {
+                "skipLockFileUpdate": true
             }
         },
         "conventionalCommits": {
