@@ -1,3 +1,13 @@
+## 1.1.6 (2025-05-06)
+
+### 🩹 Fixes
+
+- remove @typescript-eslint/utils dependency from yarn.lock ([cc6cba0](https://github.com/Act-Aks/actlib/commit/cc6cba0))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 1.1.5 (2025-04-22)
 
 ### 📖 Documentation

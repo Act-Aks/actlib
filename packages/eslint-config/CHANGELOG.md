@@ -1,3 +1,21 @@
+## 1.0.5 (2025-05-06)
+
+### 🚀 Features
+
+- **rn-carousel:** add carousel component with animations and autoplay ([eddf7e6](https://github.com/Act-Aks/actlib/commit/eddf7e6))
+
+### 🩹 Fixes
+
+- remove @typescript-eslint/utils dependency from yarn.lock ([cc6cba0](https://github.com/Act-Aks/actlib/commit/cc6cba0))
+
+### 📖 Documentation
+
+- **rn-carousel:** add animation gifs and update README ([f4c4160](https://github.com/Act-Aks/actlib/commit/f4c4160))
+
+### ❤️ Thank You
+
+- Act-Aks @aksnovacoders
+
 ## 1.0.4 (2025-04-22)
 
 ### 🩹 Fixes
