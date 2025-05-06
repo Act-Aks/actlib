@@ -10,6 +10,7 @@ __metadata:
   resolution: "@act-aks/eslint-config@workspace:packages/eslint-config"
   dependencies:
     "@eslint/js": "npm:9.26.0"
+    "@typescript-eslint/utils": "npm:8.32.0"
     eslint-plugin-check-file: "npm:3.2.0"
     eslint-plugin-import: "npm:2.31.0"
     eslint-plugin-no-relative-import-paths: "npm:1.6.1"
