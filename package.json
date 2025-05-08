@@ -18,8 +18,8 @@
         "release": "yarn nx run-many -t build && tsx tools/release.ts"
     },
     "devDependencies": {
-        "@commitlint/cli": "19.8.0",
-        "@commitlint/config-nx-scopes": "19.8.0",
+        "@commitlint/cli": "19.8.1",
+        "@commitlint/config-nx-scopes": "19.8.1",
         "@eslint/js": "9.26.0",
         "@nx/eslint": "21.0.0",
         "@nx/eslint-plugin": "21.0.0",
