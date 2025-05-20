@@ -1,3 +1,9 @@
+## 1.0.6 (2025-05-20)
+
+### 🩹 Fixes
+
+- **deps:** update eslint monorepo to v9.27.0 ([#63](https://github.com/Act-Aks/actlib/pull/63))
+
 ## 1.0.5 (2025-05-06)
 
 ### 🚀 Features
