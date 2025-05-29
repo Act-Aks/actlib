@@ -29,7 +29,7 @@ __metadata:
   resolution: "@act-aks/rn-bottom-sheet@workspace:packages/rn-bottom-sheet"
   dependencies:
     react-native-gesture-handler: "npm:2.25.0"
-    react-native-reanimated: "npm:3.17.5"
+    react-native-reanimated: "npm:3.18.0"
   peerDependencies:
     react: ">=19"
     react-native: ">=0.78"
@@ -40,7 +40,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@act-aks/rn-carousel@workspace:packages/rn-carousel"
   dependencies:
-    react-native-reanimated: "npm:3.17.5"
+    react-native-reanimated: "npm:3.18.0"
   peerDependencies:
     react: ">=19"
     react-native: ">=0.79"
@@ -86,7 +86,7 @@ __metadata:
     react: "npm:19.1.0"
     react-native: "npm:0.79.2"
     react-native-gesture-handler: "npm:2.25.0"
-    react-native-reanimated: "npm:3.17.5"
+    react-native-reanimated: "npm:3.18.0"
     rollup: "npm:4.41.0"
     swc-loader: "npm:0.2.6"
     tslib: "npm:2.8.1"
@@ -10531,9 +10531,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-reanimated@npm:3.17.5":
-  version: 3.17.5
-  resolution: "react-native-reanimated@npm:3.17.5"
+"react-native-reanimated@npm:3.18.0":
+  version: 3.18.0
+  resolution: "react-native-reanimated@npm:3.18.0"
   dependencies:
     "@babel/plugin-transform-arrow-functions": "npm:^7.0.0-0"
     "@babel/plugin-transform-class-properties": "npm:^7.0.0-0"
@@ -10551,7 +10551,7 @@ __metadata:
     "@babel/core": ^7.0.0-0
     react: "*"
     react-native: "*"
-  checksum: 10/63501d8ac0cb2039e60ac93bc779e946af267bb55f95cf53ed538bcf9bfca030fa5d84d5c9343dcbc4d8df0d5e9d7c58ca5647d43b17f8399dec11d812da11fc
+  checksum: 10/aec34f97393b3189fc727cee306481af0f6f47309589f04d4ece89cae69144131f896ddc226f786c2261c828091481494cbd6c442d1152461da83334fc643def
   languageName: node
   linkType: hard
 
