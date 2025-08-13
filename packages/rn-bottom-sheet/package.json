@@ -38,7 +38,7 @@
     },
     "dependencies": {
         "react-native-gesture-handler": "2.25.0",
-        "react-native-reanimated": "3.18.0"
+        "react-native-reanimated": "4.0.2"
     },
     "peerDependencies": {
         "react": ">=19",

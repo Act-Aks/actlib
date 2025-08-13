@@ -37,7 +37,7 @@
         "directory": "packages/rn-carousel"
     },
     "dependencies": {
-        "react-native-reanimated": "3.18.0"
+        "react-native-reanimated": "4.0.2"
     },
     "peerDependencies": {
         "react": ">=19",
