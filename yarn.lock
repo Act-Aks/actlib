@@ -64,7 +64,7 @@ __metadata:
     "@swc/helpers": "npm:0.5.17"
     "@trivago/prettier-plugin-sort-imports": "npm:5.2.2"
     "@types/fs-extra": "npm:11.0.4"
-    "@types/node": "npm:22.16.0"
+    "@types/node": "npm:22.17.2"
     "@types/react": "npm:19.1.8"
     dpdm: "npm:3.14.0"
     eslint: "npm:9.30.1"
@@ -3710,12 +3710,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.16.0":
-  version: 22.16.0
-  resolution: "@types/node@npm:22.16.0"
+"@types/node@npm:22.17.2":
+  version: 22.17.2
+  resolution: "@types/node@npm:22.17.2"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/26ebbbd24749caa4a692664290c53cdca63ec717ca250cd2babf3d3da796e9d3d0b6b9814d160693261b5e881796bf0f3c1887fef355b19e9a78fe27cd5e2ce2
+  checksum: 10/b830746c65e014d7d47102ab2f24ec74bdb60156b9b75af42e75d81375f211904347125c00543b5fd7119223b3157726bc9814619205571c0a0afd6ce3c43abb
   languageName: node
   linkType: hard
 
