@@ -37,7 +37,7 @@
         "directory": "packages/rn-bottom-sheet"
     },
     "dependencies": {
-        "react-native-gesture-handler": "2.25.0",
+        "react-native-gesture-handler": "2.31.2",
         "react-native-reanimated": "4.3.0"
     },
     "peerDependencies": {
