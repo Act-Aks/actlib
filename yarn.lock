@@ -11,7 +11,7 @@ __metadata:
   dependencies:
     "@eslint/js": "npm:9.39.4"
     "@typescript-eslint/utils": "npm:8.34.0"
-    eslint-plugin-check-file: "npm:3.3.0"
+    eslint-plugin-check-file: "npm:3.3.2"
     eslint-plugin-import: "npm:2.32.0"
     eslint-plugin-no-relative-import-paths: "npm:1.6.1"
     eslint-plugin-promise: "npm:7.2.1"
@@ -69,7 +69,7 @@ __metadata:
     dpdm: "npm:3.14.0"
     eslint: "npm:9.39.4"
     eslint-config-prettier: "npm:10.1.8"
-    eslint-plugin-check-file: "npm:3.3.0"
+    eslint-plugin-check-file: "npm:3.3.2"
     eslint-plugin-import: "npm:2.32.0"
     eslint-plugin-no-relative-import-paths: "npm:1.6.1"
     eslint-plugin-promise: "npm:7.2.1"
@@ -6410,15 +6410,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-check-file@npm:3.3.0":
-  version: 3.3.0
-  resolution: "eslint-plugin-check-file@npm:3.3.0"
+"eslint-plugin-check-file@npm:3.3.2":
+  version: 3.3.2
+  resolution: "eslint-plugin-check-file@npm:3.3.2"
   dependencies:
     is-glob: "npm:^4.0.3"
     micromatch: "npm:^4.0.8"
   peerDependencies:
     eslint: ">=9.0.0"
-  checksum: 10/825772b9e65c61874d1067bbbef1a287e3c8c6e3b0268d5bad59955d7eab4f936e4c6f4e66bfa072619bb5c88f301189590744936be02ef3f361d67acf4d464c
+  checksum: 10/833811ea0ff6ba2943b8c912fa067cde86ac230c5c0ddbb430c49226b3be1d49d733d6f02c228aacb038708146863dee4425312f09e236845e303fd85940002e
   languageName: node
   linkType: hard
 
